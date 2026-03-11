@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <string>
 
-
+using namespace std;
 // Новый интерфейс принтера (USB)
 class USBPrinter {
 public:
@@ -56,8 +56,8 @@ private:
 public:
     LPTToUSBScannerAdapter(OldLPTScanner* s) : oldScanner(s) {}
 
-    std::string scanUSB(int quality) override {
-        std::string result = oldScanner->scanLPT();
+    string scanUSB(int quality) override {
+        string result = oldScanner->scanLPT();
         return result + " | качество: " + std::to_string(quality) + " USB адаптер";
     }
 };
@@ -66,8 +66,8 @@ public:
 
 class ClassPrinterAdapter : public USBPrinter, public OldLPTPrinter {
 public:
-    std::string printUSB(const std::string& data, int quality) override {
-        std::string adapted = data + " | качество: " + std::to_string(quality);
+    string printUSB(const std::string& data, int quality) override {
+        string adapted = data + " | качество: " + std::to_string(quality);
         return printLPT(adapted + " Класс адаптер");
     }
 };
@@ -80,11 +80,11 @@ int main() {
     USBPrinter* printAdapter = new LPTToUSBPrinterAdapter(&oldPrinter);
     USBScanner* scannAdapter = new LPTToUSBScannerAdapter(&oldScanner);
 
-    std::cout << printAdapter->printUSB("Документ", 90) << std::endl;
-    std::cout << scannAdapter->scanUSB(75) << std::endl;
+    cout << printAdapter->printUSB("Документ", 90) << std::endl;
+    cout << scannAdapter->scanUSB(75) << std::endl;
 
     USBPrinter* classAdapter = new ClassPrinterAdapter();
-    std::cout << classAdapter->printUSB("Фото", 100) << std::endl;
+    cout << classAdapter->printUSB("Фото", 100) << std::endl;
 
     delete printAdapter;
     delete scannAdapter;
