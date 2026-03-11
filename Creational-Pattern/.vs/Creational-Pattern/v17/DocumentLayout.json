@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\klg\\source\\repos\\Creational-Pattern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BB752AD5-A433-4DA3-B9A2-4B33419D3E64}|Creational-Pattern.vcxproj|C:\\Users\\klg\\source\\repos\\Creational-Pattern\\Creational-Pattern.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BB752AD5-A433-4DA3-B9A2-4B33419D3E64}|Creational-Pattern.vcxproj|solutionrelative:Creational-Pattern.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Creational-Pattern.cpp",
+              "DocumentMoniker": "C:\\Users\\klg\\source\\repos\\Creational-Pattern\\Creational-Pattern.cpp",
+              "RelativeDocumentMoniker": "Creational-Pattern.cpp",
+              "ToolTip": "C:\\Users\\klg\\source\\repos\\Creational-Pattern\\Creational-Pattern.cpp",
+              "RelativeToolTip": "Creational-Pattern.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-11T12:45:49.723Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
